@@ -1,0 +1,100 @@
+﻿@page "/categories"
+@using BusinessLayer
+@using DataLayer
+@inject LibraryContext context
+
+<h2>Categories</h2>
+
+<div class="card p-3 mb-3">
+
+    <label>Enter category name</label>
+
+    <input class="form-control"
+           list="categoriesList"
+           @bind="name"
+           @onkeydown="HandleKey"
+           placeholder="Start typing category name" />
+
+    <datalist id="categoriesList">
+        @foreach (var category in categories)
+        {
+            <option value="@category.Name"></option>
+        }
+    </datalist>
+
+    <button class="btn btn-primary mt-2"
+            @onclick="AddCategory">
+        Add Category
+    </button>
+
+</div>
+
+<ul class="list-group">
+
+    @foreach (var category in categories)
+    {
+        <li class="list-group-item">
+
+            @category.Name
+
+            <button class="btn btn-danger float-end"
+                    @onclick="() => DeleteCategory(category.Id)">
+                Delete
+            </button>
+
+        </li>
+    }
+
+</ul>
+
+@code {
+
+    List<Category> categories = new();
+
+    string name;
+
+    protected override void OnInitialized()
+    {
+        categories = context.Categories.ToList();
+    }
+
+    void AddCategory()
+    {
+        if (string.IsNullOrWhiteSpace(name))
+            return;
+
+        Category category = new()
+        {
+            Name = name
+        };
+
+        context.Categories.Add(category);
+        context.SaveChanges();
+
+        name = "";
+
+        categories = context.Categories.ToList();
+    }
+
+    void DeleteCategory(int id)
+    {
+        var category = context.Categories.Find(id);
+
+        if (category != null)
+        {
+            context.Categories.Remove(category);
+            context.SaveChanges();
+        }
+
+        categories = context.Categories.ToList();
+    }
+
+    void HandleKey(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            AddCategory();
+        }
+    }
+
+}

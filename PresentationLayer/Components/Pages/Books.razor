@@ -1,0 +1,118 @@
+﻿@page "/books"
+@using BusinessLayer
+@using DataLayer
+@inject LibraryContext context
+
+<h2>Books</h2>
+
+<div class="card p-3 mb-3">
+
+    <label>Enter book title</label>
+    <input class="form-control" @bind="title" placeholder="Book title" />
+
+    <label>Enter year of publication</label>
+    <input class="form-control" type="number" @bind="year" placeholder="Year" />
+
+    <label>Enter author name</label>
+    <input class="form-control" list="authorsList" @bind="authorName" placeholder="Start typing author name" />
+
+    <datalist id="authorsList">
+        @foreach (var author in authors)
+        {
+            <option value="@author.Name"></option>
+        }
+    </datalist>
+
+    <button class="btn btn-primary mt-2" @onclick="AddBook">
+        Add Book
+    </button>
+
+</div>
+
+<table class="table table-striped">
+
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Author</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var book in books)
+        {
+            <tr>
+
+                <td>@book.Title</td>
+                <td>@book.Year</td>
+                <td>@book.Author?.Name</td>
+
+                <td>
+                    <button class="btn btn-danger"
+                            @onclick="() => DeleteBook(book.Id)">
+                        Delete
+                    </button>
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+@code {
+
+    List<Book> books = new();
+    List<Author> authors = new();
+
+    string title;
+    int year;
+    string authorName;
+
+    protected override void OnInitialized()
+    {
+        books = context.Books
+            .Where(b => b.AuthorId != null)
+            .ToList();
+
+        authors = context.Authors.ToList();
+    }
+
+    void AddBook()
+    {
+        var author = context.Authors
+            .FirstOrDefault(a => a.Name == authorName);
+
+        if (author == null)
+            return;
+
+        Book book = new()
+        {
+            Title = title,
+            Year = year,
+            AuthorId = author.Id
+        };
+
+        context.Books.Add(book);
+        context.SaveChanges();
+
+        books = context.Books.ToList();
+    }
+
+    void DeleteBook(int id)
+    {
+        var book = context.Books.Find(id);
+
+        if (book != null)
+        {
+            context.Books.Remove(book);
+            context.SaveChanges();
+        }
+
+        books = context.Books.ToList();
+    }
+
+}

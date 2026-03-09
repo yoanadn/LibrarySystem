@@ -1,0 +1,68 @@
+﻿@page "/authors"
+@using BusinessLayer
+@using DataLayer
+@inject LibraryContext context
+
+<h2>Authors</h2>
+
+<label>Enter author name</label>
+<input class="form-control" @bind="name" />
+
+<button class="btn btn-primary mt-2" @onclick="AddAuthor">Add Author</button>
+
+<ul class="list-group mt-3">
+
+    @foreach (var author in authors)
+    {
+        <li class="list-group-item">
+
+            @author.Name
+
+            <button class="btn btn-danger float-end"
+                    @onclick="() => DeleteAuthor(author.Id)">
+                Delete
+            </button>
+
+        </li>
+    }
+
+</ul>
+
+@code {
+
+    List<Author> authors = new();
+
+    string name;
+
+    protected override void OnInitialized()
+    {
+        authors = context.Authors.ToList();
+    }
+
+    void AddAuthor()
+    {
+        Author author = new()
+        {
+            Name = name
+        };
+
+        context.Authors.Add(author);
+        context.SaveChanges();
+
+        authors = context.Authors.ToList();
+    }
+
+    void DeleteAuthor(int id)
+    {
+        var author = context.Authors.Find(id);
+
+        if (author != null)
+        {
+            context.Authors.Remove(author);
+            context.SaveChanges();
+        }
+
+        authors = context.Authors.ToList();
+    }
+
+}

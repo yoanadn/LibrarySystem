@@ -1,0 +1,120 @@
+﻿@page "/loans"
+@using BusinessLayer
+@using DataLayer
+@inject LibraryContext context
+
+<h2>Loans</h2>
+
+<div class="card p-3 mb-3">
+
+    <label>Enter book title</label>
+    <input class="form-control" list="booksList" @bind="bookTitle" placeholder="Start typing book title" />
+
+    <datalist id="booksList">
+        @foreach (var book in books)
+        {
+            <option value="@book.Title"></option>
+        }
+    </datalist>
+
+    <label>Enter member name</label>
+    <input class="form-control" list="membersList" @bind="memberName" placeholder="Start typing member name" />
+
+    <datalist id="membersList">
+        @foreach (var member in members)
+        {
+            <option value="@member.Name"></option>
+        }
+    </datalist>
+
+    <button class="btn btn-primary mt-2" @onclick="AddLoan">
+        Add Loan
+    </button>
+
+</div>
+
+<table class="table table-striped">
+
+    <thead>
+        <tr>
+            <th>Book</th>
+            <th>Member</th>
+            <th>Date</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var loan in loans)
+        {
+            <tr>
+
+                <td>@loan.Book?.Title</td>
+                <td>@loan.Member?.Name</td>
+                <td>@loan.LoanDate.ToShortDateString()</td>
+
+                <td>
+                    <button class="btn btn-danger"
+                            @onclick="() => DeleteLoan(loan.Id)">
+                        Delete
+                    </button>
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+@code {
+
+    List<Loan> loans = new();
+    List<Book> books = new();
+    List<Member> members = new();
+
+    string bookTitle;
+    string memberName;
+
+    protected override void OnInitialized()
+    {
+        loans = context.Loans.ToList();
+        books = context.Books.ToList();
+        members = context.Members.ToList();
+    }
+
+    void AddLoan()
+    {
+        var book = context.Books.FirstOrDefault(b => b.Title == bookTitle);
+        var member = context.Members.FirstOrDefault(m => m.Name == memberName);
+
+        if (book == null || member == null)
+            return;
+
+        Loan loan = new()
+        {
+            BookId = book.Id,
+            MemberId = member.Id,
+            LoanDate = DateTime.Now
+        };
+
+        context.Loans.Add(loan);
+        context.SaveChanges();
+
+        loans = context.Loans.ToList();
+    }
+
+    void DeleteLoan(int id)
+    {
+        var loan = context.Loans.Find(id);
+
+        if (loan != null)
+        {
+            context.Loans.Remove(loan);
+            context.SaveChanges();
+        }
+
+        loans = context.Loans.ToList();
+    }
+
+}

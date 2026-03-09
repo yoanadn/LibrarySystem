@@ -1,0 +1,76 @@
+﻿@page "/members"
+@using BusinessLayer
+@using DataLayer
+@inject LibraryContext context
+
+<h2>Members</h2>
+
+<label>Enter member name</label>
+<input class="form-control" @bind="name" />
+
+<label>Enter email</label>
+<input class="form-control" @bind="email" />
+
+<button class="btn btn-primary mt-2"
+        @onclick="AddMember">
+    Add Member
+</button>
+
+<ul class="list-group mt-3">
+
+    @foreach (var member in members)
+    {
+        <li class="list-group-item">
+
+            @member.Name
+
+            <button class="btn btn-danger float-end"
+                    @onclick="() => DeleteMember(member.Id)">
+                Delete
+            </button>
+
+        </li>
+    }
+
+</ul>
+
+@code {
+
+    List<Member> members = new();
+
+    string name;
+    string email;
+
+    protected override void OnInitialized()
+    {
+        members = context.Members.ToList();
+    }
+
+    void AddMember()
+    {
+        Member member = new()
+        {
+            Name = name,
+            Email = email
+        };
+
+        context.Members.Add(member);
+        context.SaveChanges();
+
+        members = context.Members.ToList();
+    }
+
+    void DeleteMember(int id)
+    {
+        var member = context.Members.Find(id);
+
+        if (member != null)
+        {
+            context.Members.Remove(member);
+            context.SaveChanges();
+        }
+
+        members = context.Members.ToList();
+    }
+
+}

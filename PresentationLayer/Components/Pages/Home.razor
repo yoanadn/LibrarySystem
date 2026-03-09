@@ -1,0 +1,31 @@
+﻿@page "/"
+@using BusinessLayer
+@using DataLayer
+@inject LibraryContext context
+
+<h1>Library System</h1>
+
+<h3>Top Books for This Month</h3>
+
+<ul>
+    @foreach (var book in books)
+    {
+        <li>
+            <b>@book.Title</b> (@book.Year)
+        </li>
+    }
+</ul>
+
+@code {
+
+    List<Book> books = new();
+
+    protected override void OnInitialized()
+    {
+        books = context.Books
+            .OrderByDescending(b => b.Year)
+            .Take(5)
+            .ToList();
+    }
+
+}
