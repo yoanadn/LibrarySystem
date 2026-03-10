@@ -1,38 +1,52 @@
 ﻿@page "/members"
+@rendermode InteractiveServer
 @using BusinessLayer
 @using DataLayer
 @inject LibraryContext context
 
 <h2>Members</h2>
 
-<label>Enter member name</label>
+<label>Name</label>
 <input class="form-control" @bind="name" />
 
-<label>Enter email</label>
+<label>Email</label>
 <input class="form-control" @bind="email" />
 
-<button class="btn btn-primary mt-2"
-        @onclick="AddMember">
+<button class="btn btn-primary mt-2" @onclick="AddMember">
     Add Member
 </button>
 
-<ul class="list-group mt-3">
+<table class="table mt-4">
 
-    @foreach (var member in members)
-    {
-        <li class="list-group-item">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
 
-            @member.Name
+    <tbody>
 
-            <button class="btn btn-danger float-end"
-                    @onclick="() => DeleteMember(member.Id)">
-                Delete
-            </button>
+        @foreach (var m in members)
+        {
+            <tr>
 
-        </li>
-    }
+                <td>@m.Name</td>
+                <td>@m.Email</td>
 
-</ul>
+                <td>
+                    <button class="btn btn-danger"
+                            @onclick="() => DeleteMember(m.Id)">
+                        Delete
+                    </button>
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+</table>
 
 @code {
 
@@ -42,6 +56,11 @@
     string email;
 
     protected override void OnInitialized()
+    {
+        LoadMembers();
+    }
+
+    void LoadMembers()
     {
         members = context.Members.ToList();
     }
@@ -57,7 +76,10 @@
         context.Members.Add(member);
         context.SaveChanges();
 
-        members = context.Members.ToList();
+        name = "";
+        email = "";
+
+        LoadMembers();
     }
 
     void DeleteMember(int id)
@@ -70,7 +92,7 @@
             context.SaveChanges();
         }
 
-        members = context.Members.ToList();
+        LoadMembers();
     }
 
 }

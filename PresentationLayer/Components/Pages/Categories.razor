@@ -1,68 +1,77 @@
 ﻿@page "/categories"
+@rendermode InteractiveServer
 @using BusinessLayer
 @using DataLayer
 @inject LibraryContext context
 
 <h2>Categories</h2>
 
-<div class="card p-3 mb-3">
+<label>Category</label>
 
-    <label>Enter category name</label>
+<input class="form-control"
+       list="categoriesList"
+       @bind="name"
+       placeholder="Start typing category" />
 
-    <input class="form-control"
-           list="categoriesList"
-           @bind="name"
-           @onkeydown="HandleKey"
-           placeholder="Start typing category name" />
-
-    <datalist id="categoriesList">
-        @foreach (var category in categories)
-        {
-            <option value="@category.Name"></option>
-        }
-    </datalist>
-
-    <button class="btn btn-primary mt-2"
-            @onclick="AddCategory">
-        Add Category
-    </button>
-
-</div>
-
-<ul class="list-group">
-
-    @foreach (var category in categories)
+<datalist id="categoriesList">
+    @foreach (var c in categories)
     {
-        <li class="list-group-item">
-
-            @category.Name
-
-            <button class="btn btn-danger float-end"
-                    @onclick="() => DeleteCategory(category.Id)">
-                Delete
-            </button>
-
-        </li>
+        <option value="@c.Name"></option>
     }
+</datalist>
 
-</ul>
+<button class="btn btn-primary mt-2"
+        @onclick="AddCategory">
+    Add Category
+</button>
+
+<table class="table mt-4">
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var c in categories)
+        {
+            <tr>
+
+                <td>@c.Name</td>
+
+                <td>
+                    <button class="btn btn-danger"
+                            @onclick="() => DeleteCategory(c.Id)">
+                        Delete
+                    </button>
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+</table>
 
 @code {
 
     List<Category> categories = new();
-
     string name;
 
     protected override void OnInitialized()
+    {
+        LoadCategories();
+    }
+
+    void LoadCategories()
     {
         categories = context.Categories.ToList();
     }
 
     void AddCategory()
     {
-        if (string.IsNullOrWhiteSpace(name))
-            return;
-
         Category category = new()
         {
             Name = name
@@ -73,7 +82,7 @@
 
         name = "";
 
-        categories = context.Categories.ToList();
+        LoadCategories();
     }
 
     void DeleteCategory(int id)
@@ -86,15 +95,7 @@
             context.SaveChanges();
         }
 
-        categories = context.Categories.ToList();
-    }
-
-    void HandleKey(KeyboardEventArgs e)
-    {
-        if (e.Key == "Enter")
-        {
-            AddCategory();
-        }
+        LoadCategories();
     }
 
 }

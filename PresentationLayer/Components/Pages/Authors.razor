@@ -1,40 +1,59 @@
 ﻿@page "/authors"
+@rendermode InteractiveServer
 @using BusinessLayer
 @using DataLayer
 @inject LibraryContext context
 
 <h2>Authors</h2>
 
-<label>Enter author name</label>
+<label>Author name</label>
 <input class="form-control" @bind="name" />
 
-<button class="btn btn-primary mt-2" @onclick="AddAuthor">Add Author</button>
+<button class="btn btn-primary mt-2" @onclick="AddAuthor">
+    Add Author
+</button>
 
-<ul class="list-group mt-3">
+<table class="table mt-4">
 
-    @foreach (var author in authors)
-    {
-        <li class="list-group-item">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
 
-            @author.Name
+    <tbody>
 
-            <button class="btn btn-danger float-end"
-                    @onclick="() => DeleteAuthor(author.Id)">
-                Delete
-            </button>
+        @foreach (var a in authors)
+        {
+            <tr>
 
-        </li>
-    }
+                <td>@a.Name</td>
 
-</ul>
+                <td>
+                    <button class="btn btn-danger"
+                            @onclick="() => DeleteAuthor(a.Id)">
+                        Delete
+                    </button>
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+</table>
 
 @code {
 
     List<Author> authors = new();
-
     string name;
 
     protected override void OnInitialized()
+    {
+        LoadAuthors();
+    }
+
+    void LoadAuthors()
     {
         authors = context.Authors.ToList();
     }
@@ -49,7 +68,9 @@
         context.Authors.Add(author);
         context.SaveChanges();
 
-        authors = context.Authors.ToList();
+        name = "";
+
+        LoadAuthors();
     }
 
     void DeleteAuthor(int id)
@@ -62,7 +83,7 @@
             context.SaveChanges();
         }
 
-        authors = context.Authors.ToList();
+        LoadAuthors();
     }
 
 }

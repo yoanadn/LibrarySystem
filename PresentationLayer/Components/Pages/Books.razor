@@ -1,58 +1,58 @@
 ﻿@page "/books"
+@rendermode InteractiveServer
 @using BusinessLayer
 @using DataLayer
 @inject LibraryContext context
 
 <h2>Books</h2>
 
-<div class="card p-3 mb-3">
+<label>Title</label>
+<input class="form-control" @bind="title" />
 
-    <label>Enter book title</label>
-    <input class="form-control" @bind="title" placeholder="Book title" />
+<label>Year</label>
+<input class="form-control" type="number" @bind="year" />
 
-    <label>Enter year of publication</label>
-    <input class="form-control" type="number" @bind="year" placeholder="Year" />
+<label>Author</label>
 
-    <label>Enter author name</label>
-    <input class="form-control" list="authorsList" @bind="authorName" placeholder="Start typing author name" />
+<input class="form-control"
+       list="authorsList"
+       @bind="authorName"
+       placeholder="Start typing author name" />
 
-    <datalist id="authorsList">
-        @foreach (var author in authors)
-        {
-            <option value="@author.Name"></option>
-        }
-    </datalist>
+<datalist id="authorsList">
+    @foreach (var a in authors)
+    {
+        <option value="@a.Name"></option>
+    }
+</datalist>
 
-    <button class="btn btn-primary mt-2" @onclick="AddBook">
-        Add Book
-    </button>
+<button class="btn btn-primary mt-2"
+        @onclick="AddBook">
+    Add Book
+</button>
 
-</div>
-
-<table class="table table-striped">
+<table class="table mt-4">
 
     <thead>
         <tr>
             <th>Title</th>
             <th>Year</th>
-            <th>Author</th>
             <th>Delete</th>
         </tr>
     </thead>
 
     <tbody>
 
-        @foreach (var book in books)
+        @foreach (var b in books)
         {
             <tr>
 
-                <td>@book.Title</td>
-                <td>@book.Year</td>
-                <td>@book.Author?.Name</td>
+                <td>@b.Title</td>
+                <td>@b.Year</td>
 
                 <td>
                     <button class="btn btn-danger"
-                            @onclick="() => DeleteBook(book.Id)">
+                            @onclick="() => DeleteBook(b.Id)">
                         Delete
                     </button>
                 </td>
@@ -74,11 +74,13 @@
 
     protected override void OnInitialized()
     {
-        books = context.Books
-            .Where(b => b.AuthorId != null)
-            .ToList();
-
+        LoadBooks();
         authors = context.Authors.ToList();
+    }
+
+    void LoadBooks()
+    {
+        books = context.Books.ToList();
     }
 
     void AddBook()
@@ -99,7 +101,7 @@
         context.Books.Add(book);
         context.SaveChanges();
 
-        books = context.Books.ToList();
+        LoadBooks();
     }
 
     void DeleteBook(int id)
@@ -112,7 +114,7 @@
             context.SaveChanges();
         }
 
-        books = context.Books.ToList();
+        LoadBooks();
     }
 
 }
