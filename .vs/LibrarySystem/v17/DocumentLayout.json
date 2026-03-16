@@ -1,105 +1,105 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\",
+  "WorkspaceRootPath": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\presentationlayer\\components\\pages\\categories.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\components\\pages\\categories.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\presentationlayer\\components\\pages\\loans.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\components\\pages\\loans.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\presentationlayer\\components\\pages\\books.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\components\\pages\\books.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\presentationlayer\\components\\pages\\members.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\components\\pages\\members.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\presentationlayer\\components\\pages\\authors.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\components\\pages\\authors.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\presentationlayer\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\presentationlayer\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\presentationlayer\\components\\pages\\categories.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\components\\pages\\categories.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\presentationlayer\\components\\pages\\loans.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\components\\pages\\loans.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\presentationlayer\\components\\pages\\books.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\components\\pages\\books.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\presentationlayer\\components\\pages\\members.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\components\\pages\\members.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\presentationlayer\\components\\pages\\authors.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\components\\pages\\authors.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\presentationlayer\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\presentationlayer\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\datalayer\\librarycontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\datalayer\\librarycontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\librarycontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\presentationlayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\presentationlayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{FA0F9CD5-C8C2-445D-BE72-129D9CA78E39}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\datalayer\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\datalayer\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\datalayer\\loandb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\datalayer\\loandb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\loandb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\datalayer\\memberdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\datalayer\\memberdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\memberdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\datalayer\\categorydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\datalayer\\categorydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\categorydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\datalayer\\authordb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\datalayer\\authordb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\authordb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\datalayer\\bookdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\datalayer\\bookdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\bookdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\datalayer\\idb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\datalayer\\idb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\idb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02F3E16C-8761-411C-A06B-31F04E89ECB2}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\businesslayer\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{02F3E16C-8761-411C-A06B-31F04E89ECB2}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\businesslayer\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02F3E16C-8761-411C-A06B-31F04E89ECB2}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02F3E16C-8761-411C-A06B-31F04E89ECB2}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\businesslayer\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{02F3E16C-8761-411C-A06B-31F04E89ECB2}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\businesslayer\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02F3E16C-8761-411C-A06B-31F04E89ECB2}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02F3E16C-8761-411C-A06B-31F04E89ECB2}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\businesslayer\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{02F3E16C-8761-411C-A06B-31F04E89ECB2}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\businesslayer\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02F3E16C-8761-411C-A06B-31F04E89ECB2}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02F3E16C-8761-411C-A06B-31F04E89ECB2}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\businesslayer\\bookcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{02F3E16C-8761-411C-A06B-31F04E89ECB2}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\businesslayer\\bookcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02F3E16C-8761-411C-A06B-31F04E89ECB2}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\bookcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02F3E16C-8761-411C-A06B-31F04E89ECB2}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\businesslayer\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{02F3E16C-8761-411C-A06B-31F04E89ECB2}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\businesslayer\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02F3E16C-8761-411C-A06B-31F04E89ECB2}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02F3E16C-8761-411C-A06B-31F04E89ECB2}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\businesslayer\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{02F3E16C-8761-411C-A06B-31F04E89ECB2}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\businesslayer\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02F3E16C-8761-411C-A06B-31F04E89ECB2}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\datalayer\\datalayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\datalayer\\datalayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\datalayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\yoana\\source\\repos\\librarysystem\\datalayer\\migrations\\20260309104454_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|c:\\users\\tedi\\source\\repos\\library\\librarysystem\\datalayer\\migrations\\20260309104454_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76C02F80-0285-45DB-A9D8-454B67AAB190}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\migrations\\20260309104454_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -110,31 +110,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Home.razor",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "PresentationLayer\\Components\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "PresentationLayer\\Components\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-09T10:54:40.453Z"
+              "WhenOpened": "2026-03-09T10:54:40.453Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Loans.razor",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Loans.razor",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Loans.razor",
               "RelativeDocumentMoniker": "PresentationLayer\\Components\\Pages\\Loans.razor",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Loans.razor",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Loans.razor",
               "RelativeToolTip": "PresentationLayer\\Components\\Pages\\Loans.razor",
               "ViewState": "AgIAAFEAAAAAAAAAAAAcwHcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -142,11 +143,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Members.razor",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Members.razor",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Members.razor",
               "RelativeDocumentMoniker": "PresentationLayer\\Components\\Pages\\Members.razor",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Members.razor",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Members.razor",
               "RelativeToolTip": "PresentationLayer\\Components\\Pages\\Members.razor",
               "ViewState": "AgIAACUAAAAAAAAAAAAgwEsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -154,24 +155,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Categories.razor",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Categories.razor",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Categories.razor",
               "RelativeDocumentMoniker": "PresentationLayer\\Components\\Pages\\Categories.razor",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Categories.razor",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Categories.razor",
               "RelativeToolTip": "PresentationLayer\\Components\\Pages\\Categories.razor",
               "ViewState": "AgIAAD0AAAAAAAAAAAAcwFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-09T10:50:07.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T10:50:07.245Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Authors.razor",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Authors.razor",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Authors.razor",
               "RelativeDocumentMoniker": "PresentationLayer\\Components\\Pages\\Authors.razor",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Authors.razor",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Authors.razor",
               "RelativeToolTip": "PresentationLayer\\Components\\Pages\\Authors.razor",
               "ViewState": "AgIAAB0AAAAAAAAAAAAcwEMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -179,11 +179,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Books.razor",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Books.razor",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Books.razor",
               "RelativeDocumentMoniker": "PresentationLayer\\Components\\Pages\\Books.razor",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Books.razor",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\Components\\Pages\\Books.razor",
               "RelativeToolTip": "PresentationLayer\\Components\\Pages\\Books.razor",
               "ViewState": "AgIAAFAAAAAAAAAAAAAwwHUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -193,9 +193,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\Components\\Layout\\NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "PresentationLayer\\Components\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\Components\\Layout\\NavMenu.razor",
               "RelativeToolTip": "PresentationLayer\\Components\\Layout\\NavMenu.razor",
               "ViewState": "AgIAAAoAAAAAAAAAAAAcwCkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -205,9 +205,9 @@
               "$type": "Document",
               "DocumentIndex": 24,
               "Title": "20260309104454_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\Migrations\\20260309104454_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\Migrations\\20260309104454_InitialCreate.cs",
               "RelativeDocumentMoniker": "DataLayer\\Migrations\\20260309104454_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\Migrations\\20260309104454_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\Migrations\\20260309104454_InitialCreate.cs",
               "RelativeToolTip": "DataLayer\\Migrations\\20260309104454_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -217,9 +217,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "LibraryContextFactory.cs",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\LibraryContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\LibraryContextFactory.cs",
               "RelativeDocumentMoniker": "DataLayer\\LibraryContextFactory.cs",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\LibraryContextFactory.cs",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\LibraryContextFactory.cs",
               "RelativeToolTip": "DataLayer\\LibraryContextFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -229,9 +229,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\Program.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\Program.cs",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\Program.cs",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\Program.cs",
               "RelativeToolTip": "PresentationLayer\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -241,9 +241,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\appsettings.json",
               "RelativeDocumentMoniker": "PresentationLayer\\appsettings.json",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\appsettings.json",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\appsettings.json",
               "RelativeToolTip": "PresentationLayer\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -253,9 +253,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "LibraryContext.cs",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\LibraryContext.cs",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\LibraryContext.cs",
               "RelativeDocumentMoniker": "DataLayer\\LibraryContext.cs",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\LibraryContext.cs",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\LibraryContext.cs",
               "RelativeToolTip": "DataLayer\\LibraryContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -265,9 +265,9 @@
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "BookCategory.cs",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\BookCategory.cs",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\BookCategory.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\BookCategory.cs",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\BookCategory.cs",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\BookCategory.cs",
               "RelativeToolTip": "BusinessLayer\\BookCategory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -277,9 +277,9 @@
               "$type": "Document",
               "DocumentIndex": 23,
               "Title": "DataLayer.csproj",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\DataLayer.csproj",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\DataLayer.csproj",
               "RelativeDocumentMoniker": "DataLayer\\DataLayer.csproj",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\DataLayer.csproj",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\DataLayer.csproj",
               "RelativeToolTip": "DataLayer\\DataLayer.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -289,9 +289,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "LoanDb.cs",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\LoanDb.cs",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\LoanDb.cs",
               "RelativeDocumentMoniker": "DataLayer\\LoanDb.cs",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\LoanDb.cs",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\LoanDb.cs",
               "RelativeToolTip": "DataLayer\\LoanDb.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAcwEEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -301,11 +301,11 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "MemberDb.cs",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\MemberDb.cs",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\MemberDb.cs",
               "RelativeDocumentMoniker": "DataLayer\\MemberDb.cs",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\MemberDb.cs",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\MemberDb.cs",
               "RelativeToolTip": "DataLayer\\MemberDb.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA2wDAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwDAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-09T10:14:20.716Z"
             },
@@ -313,11 +313,11 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "CategoryDb.cs",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\CategoryDb.cs",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\CategoryDb.cs",
               "RelativeDocumentMoniker": "DataLayer\\CategoryDb.cs",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\CategoryDb.cs",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\CategoryDb.cs",
               "RelativeToolTip": "DataLayer\\CategoryDb.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA2wDAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwDAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-09T10:13:58.046Z"
             },
@@ -325,11 +325,11 @@
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "AuthorDb.cs",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\AuthorDb.cs",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\AuthorDb.cs",
               "RelativeDocumentMoniker": "DataLayer\\AuthorDb.cs",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\AuthorDb.cs",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\AuthorDb.cs",
               "RelativeToolTip": "DataLayer\\AuthorDb.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA2wDAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwDAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-09T10:13:33.545Z"
             },
@@ -337,9 +337,9 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "BookDb.cs",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\BookDb.cs",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\BookDb.cs",
               "RelativeDocumentMoniker": "DataLayer\\BookDb.cs",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\BookDb.cs",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\BookDb.cs",
               "RelativeToolTip": "DataLayer\\BookDb.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAcwEEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -349,9 +349,9 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "IDb.cs",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\IDb.cs",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\IDb.cs",
               "RelativeDocumentMoniker": "DataLayer\\IDb.cs",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\IDb.cs",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\IDb.cs",
               "RelativeToolTip": "DataLayer\\IDb.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -361,9 +361,9 @@
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "Loan.cs",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\Loan.cs",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\Loan.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Loan.cs",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\Loan.cs",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\Loan.cs",
               "RelativeToolTip": "BusinessLayer\\Loan.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -373,9 +373,9 @@
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "Member.cs",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\Member.cs",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\Member.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Member.cs",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\Member.cs",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\Member.cs",
               "RelativeToolTip": "BusinessLayer\\Member.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -385,9 +385,9 @@
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\Category.cs",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\Category.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Category.cs",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\Category.cs",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\Category.cs",
               "RelativeToolTip": "BusinessLayer\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -397,9 +397,9 @@
               "$type": "Document",
               "DocumentIndex": 22,
               "Title": "Author.cs",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\Author.cs",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\Author.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Author.cs",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\Author.cs",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\Author.cs",
               "RelativeToolTip": "BusinessLayer\\Author.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -409,21 +409,13 @@
               "$type": "Document",
               "DocumentIndex": 21,
               "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\Book.cs",
+              "DocumentMoniker": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\Book.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Book.cs",
-              "ToolTip": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\Book.cs",
+              "ToolTip": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\Book.cs",
               "RelativeToolTip": "BusinessLayer\\Book.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-09T10:02:57.457Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

@@ -1,79 +1,90 @@
-﻿@page "/authors"
+@page "/authors"
 @rendermode InteractiveServer
 @using BusinessLayer
 @using DataLayer
 @inject LibraryContext context
 
-<h2>Authors</h2>
+<div class="module-page">
+    <h2 class="mb-4">Authors</h2>
 
-<label>Author name</label>
-<input class="form-control" @bind="name" />
+    <div class="card shadow-sm border-0 mb-4">
+        <div class="card-header text-white module-header">Create Author</div>
+        <div class="card-body">
+            <div class="row g-3">
+                <div class="col-12 col-md-8">
+                    <label class="form-label">Author name</label>
+                    <input class="form-control" @bind="name" />
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary px-4" @onclick="AddAuthor">Add Author</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<button class="btn btn-primary mt-2" @onclick="AddAuthor">
-    Add Author
-</button>
-
-<table class="table mt-4">
-
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Delete</th>
-        </tr>
-    </thead>
-
-    <tbody>
-
-        @foreach (var a in authors)
-        {
-            <tr>
-
-                <td>@a.Name</td>
-
-                <td>
-                    <button class="btn btn-danger"
-                            @onclick="() => DeleteAuthor(a.Id)">
-                        Delete
-                    </button>
-                </td>
-
-            </tr>
-        }
-
-    </tbody>
-</table>
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-light fw-semibold">Authors List</div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Name</th>
+                            <th class="text-end">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var a in authors)
+                        {
+                            <tr>
+                                <td>@a.Name</td>
+                                <td class="text-end">
+                                    <button class="btn btn-outline-danger btn-sm" @onclick="() => DeleteAuthor(a.Id)">Delete</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 
 @code {
-
-    List<Author> authors = new();
-    string name;
+    private List<Author> authors = new();
+    private string name = string.Empty;
 
     protected override void OnInitialized()
     {
         LoadAuthors();
     }
 
-    void LoadAuthors()
+    private void LoadAuthors()
     {
-        authors = context.Authors.ToList();
+        authors = context.Authors
+            .OrderBy(a => a.Name)
+            .ToList();
     }
 
-    void AddAuthor()
+    private void AddAuthor()
     {
+        if (string.IsNullOrWhiteSpace(name))
+            return;
+
         Author author = new()
         {
-            Name = name
+            Name = name.Trim()
         };
 
         context.Authors.Add(author);
         context.SaveChanges();
 
-        name = "";
+        name = string.Empty;
 
         LoadAuthors();
     }
 
-    void DeleteAuthor(int id)
+    private void DeleteAuthor(int id)
     {
         var author = context.Authors.Find(id);
 
@@ -85,5 +96,4 @@
 
         LoadAuthors();
     }
-
 }

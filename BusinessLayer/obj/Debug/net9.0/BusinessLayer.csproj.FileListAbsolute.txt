@@ -9,3 +9,15 @@ C:\Users\Yoana\source\repos\LibrarySystem\BusinessLayer\obj\Debug\net9.0\Busines
 C:\Users\Yoana\source\repos\LibrarySystem\BusinessLayer\obj\Debug\net9.0\refint\BusinessLayer.dll
 C:\Users\Yoana\source\repos\LibrarySystem\BusinessLayer\obj\Debug\net9.0\BusinessLayer.pdb
 C:\Users\Yoana\source\repos\LibrarySystem\BusinessLayer\obj\Debug\net9.0\ref\BusinessLayer.dll
+C:\Users\Tedi\source\repos\Library\LibrarySystem\BusinessLayer\bin\Debug\net9.0\BusinessLayer.deps.json
+C:\Users\Tedi\source\repos\Library\LibrarySystem\BusinessLayer\bin\Debug\net9.0\BusinessLayer.dll
+C:\Users\Tedi\source\repos\Library\LibrarySystem\BusinessLayer\bin\Debug\net9.0\BusinessLayer.pdb
+C:\Users\Tedi\source\repos\Library\LibrarySystem\BusinessLayer\obj\Debug\net9.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tedi\source\repos\Library\LibrarySystem\BusinessLayer\obj\Debug\net9.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\Tedi\source\repos\Library\LibrarySystem\BusinessLayer\obj\Debug\net9.0\BusinessLayer.AssemblyInfo.cs
+C:\Users\Tedi\source\repos\Library\LibrarySystem\BusinessLayer\obj\Debug\net9.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Tedi\source\repos\Library\LibrarySystem\BusinessLayer\obj\Debug\net9.0\BusinessLayer.sourcelink.json
+C:\Users\Tedi\source\repos\Library\LibrarySystem\BusinessLayer\obj\Debug\net9.0\BusinessLayer.dll
+C:\Users\Tedi\source\repos\Library\LibrarySystem\BusinessLayer\obj\Debug\net9.0\refint\BusinessLayer.dll
+C:\Users\Tedi\source\repos\Library\LibrarySystem\BusinessLayer\obj\Debug\net9.0\BusinessLayer.pdb
+C:\Users\Tedi\source\repos\Library\LibrarySystem\BusinessLayer\obj\Debug\net9.0\ref\BusinessLayer.dll

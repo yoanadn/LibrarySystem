@@ -27,7 +27,8 @@ namespace DataLayer
             if (useNavigationalProperties)
             {
                 query = query.Include(b => b.Author)
-                           .Include(b => b.BookCategories);
+                           .Include(b => b.BookCategories)
+                           .ThenInclude(bc => bc.Category);
             }
 
             return query.FirstOrDefault(b => b.Id == key);
@@ -40,7 +41,8 @@ namespace DataLayer
             if (useNavigationalProperties)
             {
                 query = query.Include(b => b.Author)
-                           .Include(b => b.BookCategories);
+                           .Include(b => b.BookCategories)
+                           .ThenInclude(bc => bc.Category);
             }
 
             return query.ToList();

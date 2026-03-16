@@ -1,108 +1,128 @@
-﻿@page "/loans"
+@page "/loans"
 @rendermode InteractiveServer
 @using BusinessLayer
 @using DataLayer
+@using Microsoft.EntityFrameworkCore
+@using PresentationLayer.ViewModels
 @inject LibraryContext context
 
-<h2>Loans</h2>
+<div class="module-page">
+    <h2 class="mb-4">Loans</h2>
 
-<label>Book</label>
+    <div class="card shadow-sm border-0 mb-4">
+        <div class="card-header text-white module-header">
+            Create Loan
+        </div>
+        <div class="card-body">
+            <EditForm Model="formModel" OnValidSubmit="AddLoan">
+                <DataAnnotationsValidator />
+                <ValidationSummary class="text-danger mb-3" />
 
-<input class="form-control"
-       list="booksList"
-       @bind="bookTitle"
-       placeholder="Start typing book title" />
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <label class="form-label">Book</label>
+                        <InputSelect class="form-select" @bind-Value="formModel.BookId">
+                            <option value="0">Select book</option>
+                            @foreach (var book in books)
+                            {
+                                <option value="@book.Id">@book.Title</option>
+                            }
+                        </InputSelect>
+                        <ValidationMessage For="@(() => formModel.BookId)" class="text-danger" />
+                    </div>
 
-<datalist id="booksList">
-    @foreach (var b in books)
-    {
-        <option value="@b.Title"></option>
-    }
-</datalist>
+                    <div class="col-12 col-md-6">
+                        <label class="form-label">Member</label>
+                        <InputSelect class="form-select" @bind-Value="formModel.MemberId">
+                            <option value="0">Select member</option>
+                            @foreach (var member in members)
+                            {
+                                <option value="@member.Id">@member.Name</option>
+                            }
+                        </InputSelect>
+                        <ValidationMessage For="@(() => formModel.MemberId)" class="text-danger" />
+                    </div>
 
-<label>Member</label>
+                    <div class="col-12">
+                        <button class="btn btn-primary px-4" type="submit">
+                            Add Loan
+                        </button>
+                    </div>
+                </div>
+            </EditForm>
+        </div>
+    </div>
 
-<input class="form-control"
-       list="membersList"
-       @bind="memberName"
-       placeholder="Start typing member name" />
-
-<datalist id="membersList">
-    @foreach (var m in members)
-    {
-        <option value="@m.Name"></option>
-    }
-</datalist>
-
-<button class="btn btn-primary mt-2" @onclick="AddLoan">
-    Add Loan
-</button>
-
-<table class="table mt-4">
-
-    <thead>
-        <tr>
-            <th>Book</th>
-            <th>Member</th>
-            <th>Date</th>
-            <th>Delete</th>
-        </tr>
-    </thead>
-
-    <tbody>
-
-        @foreach (var l in loans)
-        {
-            <tr>
-
-                <td>@l.Book?.Title</td>
-                <td>@l.Member?.Name</td>
-                <td>@l.LoanDate.ToShortDateString()</td>
-
-                <td>
-                    <button class="btn btn-danger"
-                            @onclick="() => DeleteLoan(l.Id)">
-                        Delete
-                    </button>
-                </td>
-
-            </tr>
-        }
-
-    </tbody>
-</table>
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-light">
+            Active Loans
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Book</th>
+                            <th>Member</th>
+                            <th>Date</th>
+                            <th class="text-end">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var loan in loans)
+                        {
+                            <tr>
+                                <td>@loan.Book?.Title</td>
+                                <td>@loan.Member?.Name</td>
+                                <td><span class="badge text-bg-info">@loan.LoanDate.ToShortDateString()</span></td>
+                                <td class="text-end">
+                                    <button class="btn btn-outline-danger btn-sm"
+                                            @onclick="() => DeleteLoan(loan.Id)">
+                                        Delete
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 
 @code {
+    private List<Loan> loans = new();
+    private List<Book> books = new();
+    private List<Member> members = new();
 
-    List<Loan> loans = new();
-    List<Book> books = new();
-    List<Member> members = new();
-
-    string bookTitle;
-    string memberName;
+    private CreateLoanViewModel formModel = new();
 
     protected override void OnInitialized()
     {
         LoadData();
     }
 
-    void LoadData()
+    private void LoadData()
     {
         loans = context.Loans
+            .Include(l => l.Book)
+            .Include(l => l.Member)
+            .OrderByDescending(l => l.LoanDate)
             .ToList();
 
-        books = context.Books.ToList();
+        books = context.Books
+            .OrderBy(b => b.Title)
+            .ToList();
 
-        members = context.Members.ToList();
+        members = context.Members
+            .OrderBy(m => m.Name)
+            .ToList();
     }
 
-    void AddLoan()
+    private void AddLoan()
     {
-        var book = context.Books
-            .FirstOrDefault(b => b.Title == bookTitle);
-
-        var member = context.Members
-            .FirstOrDefault(m => m.Name == memberName);
+        var book = context.Books.Find(formModel.BookId);
+        var member = context.Members.Find(formModel.MemberId);
 
         if (book == null || member == null)
             return;
@@ -117,13 +137,11 @@
         context.Loans.Add(loan);
         context.SaveChanges();
 
-        bookTitle = "";
-        memberName = "";
-
+        formModel = new CreateLoanViewModel();
         LoadData();
     }
 
-    void DeleteLoan(int id)
+    private void DeleteLoan(int id)
     {
         var loan = context.Loans.Find(id);
 
@@ -135,5 +153,4 @@
 
         LoadData();
     }
-
 }

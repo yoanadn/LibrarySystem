@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\PresentationLayer.csproj": {}
+    "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\PresentationLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\Yoana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\Tedi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Yoana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tedi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -65,24 +65,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\DataLayer.csproj": {
+    "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\DataLayer.csproj",
-        "packagesPath": "C:\\Users\\Yoana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\obj\\",
+        "projectPath": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\DataLayer.csproj",
+        "packagesPath": "C:\\Users\\Tedi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Yoana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tedi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -97,8 +97,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\BusinessLayer.csproj"
+              "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\BusinessLayer.csproj"
               }
             }
           }
@@ -150,24 +150,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\PresentationLayer.csproj": {
+    "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\PresentationLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\PresentationLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\PresentationLayer.csproj",
         "projectName": "PresentationLayer",
-        "projectPath": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\PresentationLayer.csproj",
-        "packagesPath": "C:\\Users\\Yoana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\PresentationLayer\\obj\\",
+        "projectPath": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\PresentationLayer.csproj",
+        "packagesPath": "C:\\Users\\Tedi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\PresentationLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Yoana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tedi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -182,11 +182,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\BusinessLayer\\BusinessLayer.csproj"
+              "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\BusinessLayer\\BusinessLayer.csproj"
               },
-              "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\DataLayer.csproj": {
-                "projectPath": "C:\\Users\\Yoana\\source\\repos\\LibrarySystem\\DataLayer\\DataLayer.csproj"
+              "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "C:\\Users\\Tedi\\source\\repos\\Library\\LibrarySystem\\DataLayer\\DataLayer.csproj"
               }
             }
           }
@@ -237,7 +237,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

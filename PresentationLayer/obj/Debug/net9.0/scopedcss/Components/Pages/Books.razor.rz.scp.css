@@ -1,0 +1,22 @@
+.module-page[b-2k6v6yxvhw] {
+    max-width: 1100px;
+}
+
+.module-page .card-header[b-2k6v6yxvhw] {
+    font-weight: 600;
+}
+
+.module-page .category-list[b-2k6v6yxvhw] {
+    border: 1px solid var(--bs-border-color);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    background: var(--bs-light-bg-subtle);
+}
+
+.module-page .category-item .form-check-input[b-2k6v6yxvhw] {
+    cursor: pointer;
+}
+
+.module-page .category-item .form-check-label[b-2k6v6yxvhw] {
+    cursor: pointer;
+}

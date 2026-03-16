@@ -1,110 +1,238 @@
-﻿@page "/books"
+@page "/books"
 @rendermode InteractiveServer
 @using BusinessLayer
 @using DataLayer
+@using Microsoft.EntityFrameworkCore
+@using PresentationLayer.ViewModels
 @inject LibraryContext context
 
-<h2>Books</h2>
+<div class="module-page">
+    <h2 class="mb-4">Books</h2>
 
-<label>Title</label>
-<input class="form-control" @bind="title" />
+    <div class="card shadow-sm border-0 mb-4">
+        <div class="card-header text-white module-header">
+            Create Book
+        </div>
+        <div class="card-body">
+            <EditForm Model="formModel" OnValidSubmit="AddBook">
+                <DataAnnotationsValidator />
+                <ValidationSummary class="text-danger mb-3" />
 
-<label>Year</label>
-<input class="form-control" type="number" @bind="year" />
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <label class="form-label">Title</label>
+                        <InputText class="form-control" @bind-Value="formModel.Title" />
+                        <ValidationMessage For="@(() => formModel.Title)" class="text-danger" />
+                    </div>
 
-<label>Author</label>
+                    <div class="col-12 col-md-6">
+                        <label class="form-label">Author</label>
+                        <InputSelect class="form-select" @bind-Value="formModel.SelectedAuthorValue">
+                            <option value="">Select author</option>
+                            @foreach (var author in authors)
+                            {
+                                <option value="@author.Id">@author.Name</option>
+                            }
+                            <option value="@AddNewAuthorValue">Add new author</option>
+                        </InputSelect>
+                        <ValidationMessage For="@(() => formModel.SelectedAuthorValue)" class="text-danger" />
+                    </div>
 
-<input class="form-control"
-       list="authorsList"
-       @bind="authorName"
-       placeholder="Start typing author name" />
+                    @if (formModel.SelectedAuthorValue == AddNewAuthorValue)
+                    {
+                        <div class="col-12 col-md-6">
+                            <label class="form-label">New Author Name</label>
+                            <InputText class="form-control" @bind-Value="formModel.NewAuthorName" placeholder="Enter author name" />
+                            <ValidationMessage For="@(() => formModel.NewAuthorName)" class="text-danger" />
+                        </div>
+                    }
 
-<datalist id="authorsList">
-    @foreach (var a in authors)
-    {
-        <option value="@a.Name"></option>
-    }
-</datalist>
+                    <div class="col-12">
+                        <label class="form-label d-block">Categories</label>
+                        <div class="category-list">
+                            @foreach (var category in categories)
+                            {
+                                <div class="form-check form-check-inline category-item me-3 mb-2">
+                                    <input class="form-check-input"
+                                           type="checkbox"
+                                           id="@($"category_{category.Id}")"
+                                           checked="@formModel.SelectedCategoryIds.Contains(category.Id)"
+                                           @onchange="(args) => ToggleCategory(category.Id, args.Value)" />
+                                    <label class="form-check-label" for="@($"category_{category.Id}")">
+                                        @category.Name
+                                    </label>
+                                </div>
+                            }
+                        </div>
+                        <ValidationMessage For="@(() => formModel.SelectedCategoryIds)" class="text-danger" />
+                    </div>
 
-<button class="btn btn-primary mt-2"
-        @onclick="AddBook">
-    Add Book
-</button>
+                    <div class="col-12">
+                        <button class="btn btn-primary px-4" type="submit">
+                            Add Book
+                        </button>
+                    </div>
+                </div>
+            </EditForm>
+        </div>
+    </div>
 
-<table class="table mt-4">
-
-    <thead>
-        <tr>
-            <th>Title</th>
-            <th>Year</th>
-            <th>Delete</th>
-        </tr>
-    </thead>
-
-    <tbody>
-
-        @foreach (var b in books)
-        {
-            <tr>
-
-                <td>@b.Title</td>
-                <td>@b.Year</td>
-
-                <td>
-                    <button class="btn btn-danger"
-                            @onclick="() => DeleteBook(b.Id)">
-                        Delete
-                    </button>
-                </td>
-
-            </tr>
-        }
-
-    </tbody>
-</table>
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-light">
+            Books List
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Categories</th>
+                            <th class="text-end">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var book in books)
+                        {
+                            <tr>
+                                <td>@book.Title</td>
+                                <td>@book.Author?.Name</td>
+                                <td>
+                                    @if (book.BookCategories != null && book.BookCategories.Any())
+                                    {
+                                        @foreach (var bookCategory in book.BookCategories.OrderBy(bc => bc.Category!.Name))
+                                        {
+                                            <span class="badge text-bg-secondary me-1 mb-1">@bookCategory.Category?.Name</span>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">No categories</span>
+                                    }
+                                </td>
+                                <td class="text-end">
+                                    <button class="btn btn-outline-danger btn-sm"
+                                            @onclick="() => DeleteBook(book.Id)">
+                                        Delete
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 
 @code {
+    private const string AddNewAuthorValue = "__add_new_author__";
 
-    List<Book> books = new();
-    List<Author> authors = new();
+    private List<Book> books = new();
+    private List<Author> authors = new();
+    private List<Category> categories = new();
 
-    string title;
-    int year;
-    string authorName;
+    private CreateBookViewModel formModel = new();
 
     protected override void OnInitialized()
     {
+        LoadAuthors();
+        LoadCategories();
         LoadBooks();
-        authors = context.Authors.ToList();
     }
 
-    void LoadBooks()
+    private void LoadBooks()
     {
-        books = context.Books.ToList();
+        books = context.Books
+            .Include(b => b.Author)
+            .Include(b => b.BookCategories)
+            .ThenInclude(bc => bc.Category)
+            .OrderBy(b => b.Title)
+            .ToList();
     }
 
-    void AddBook()
+    private void LoadAuthors()
     {
-        var author = context.Authors
-            .FirstOrDefault(a => a.Name == authorName);
+        authors = context.Authors
+            .OrderBy(a => a.Name)
+            .ToList();
+    }
 
-        if (author == null)
-            return;
+    private void LoadCategories()
+    {
+        categories = context.Categories
+            .OrderBy(c => c.Name)
+            .ToList();
+    }
 
-        Book book = new()
+    private void AddBook()
+    {
+        int authorId;
+
+        if (formModel.SelectedAuthorValue == AddNewAuthorValue)
         {
-            Title = title,
-            Year = year,
-            AuthorId = author.Id
+            var normalizedAuthorName = formModel.NewAuthorName?.Trim();
+
+            if (string.IsNullOrWhiteSpace(normalizedAuthorName))
+            {
+                return;
+            }
+
+            var existingAuthor = context.Authors
+                .FirstOrDefault(a => a.Name == normalizedAuthorName);
+
+            if (existingAuthor == null)
+            {
+                var newAuthor = new Author
+                {
+                    Name = normalizedAuthorName
+                };
+
+                context.Authors.Add(newAuthor);
+                context.SaveChanges();
+                authorId = newAuthor.Id;
+            }
+            else
+            {
+                authorId = existingAuthor.Id;
+            }
+        }
+        else if (!int.TryParse(formModel.SelectedAuthorValue, out authorId))
+        {
+            return;
+        }
+
+        var book = new Book
+        {
+            Title = formModel.Title.Trim(),
+            AuthorId = authorId
         };
 
         context.Books.Add(book);
         context.SaveChanges();
 
+        var bookCategories = formModel.SelectedCategoryIds
+            .Distinct()
+            .Select(categoryId => new BookCategory
+            {
+                BookId = book.Id,
+                CategoryId = categoryId
+            })
+            .ToList();
+
+        if (bookCategories.Count > 0)
+        {
+            context.BookCategories.AddRange(bookCategories);
+            context.SaveChanges();
+        }
+
+        formModel = new CreateBookViewModel();
+        LoadAuthors();
         LoadBooks();
     }
 
-    void DeleteBook(int id)
+    private void DeleteBook(int id)
     {
         var book = context.Books.Find(id);
 
@@ -117,4 +245,20 @@
         LoadBooks();
     }
 
+    private void ToggleCategory(int categoryId, object? value)
+    {
+        bool isChecked = value is bool checkedValue && checkedValue;
+
+        if (isChecked)
+        {
+            if (!formModel.SelectedCategoryIds.Contains(categoryId))
+            {
+                formModel.SelectedCategoryIds.Add(categoryId);
+            }
+        }
+        else
+        {
+            formModel.SelectedCategoryIds.Remove(categoryId);
+        }
+    }
 }
